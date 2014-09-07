@@ -8,9 +8,8 @@
 
 
 
-	<!-- Note: if you modify the WebEditorController the live updates may break -->
-	<Code class="WebEditorController" singleton="true">
-		
-    </Code>
 
+
+	<!-- Note: if you modify the WebEditorController the live updates may break -->
+	<Code class="WebEditorController" singleton="true" />
 </Canvas>
