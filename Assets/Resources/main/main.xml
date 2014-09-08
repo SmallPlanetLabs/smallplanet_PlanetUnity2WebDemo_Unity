@@ -7,8 +7,6 @@
 
 
 
-
-
 	<!-- Note: if you modify the WebEditorController the live updates may break -->
 	<Code class="WebEditorController" singleton="true">
 		<Notification name="ButtonClicked" />
