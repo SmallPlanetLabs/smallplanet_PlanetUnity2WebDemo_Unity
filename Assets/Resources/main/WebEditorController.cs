@@ -1,5 +1,6 @@
 
 using UnityEngine;
+using System.Collections;
 
 public class WebEditorController : MonoBehaviour, IPUCode {
 
@@ -19,6 +20,25 @@ public class WebEditorController : MonoBehaviour, IPUCode {
 			{
 				PlanetUnityGameObject.currentGameObject.LoadCanvasXML(newXML);
 			}));
+	}
+
+	public void ButtonClicked() {
+		#if UNITY_WEBPLAYER && !UNITY_EDITOR
+		Application.ExternalCall( "Alert", "Button Clicked!" );
+		#endif
+	}
+
+	public void InputFieldChanged(Hashtable args) {
+		PUInputField field = args ["sender"] as PUInputField;
+
+		if (field != null) {
+
+			Debug.Log ("You entered \""+field.field.value+"\"");
+
+			#if UNITY_WEBPLAYER && !UNITY_EDITOR
+			Application.ExternalCall( "Alert", "You entered \""+field.field.value+"\"" );
+			#endif
+		}
 	}
 
 }

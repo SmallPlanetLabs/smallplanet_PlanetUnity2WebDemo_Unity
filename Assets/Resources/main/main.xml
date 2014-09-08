@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Canvas title="Main" renderMode="Overlay" xmlns="http://schema.smallplanet.com/PlanetUnity2.xsd" >
 
-	<Color color="#000000FF" anchor="stretch,stretch">
-		<Text value="Modify the XML below!" fontColor="#FFFFFFFF" fontSize="48" anchor="stretch,stretch" />
+	<Color color="#FFFFFFFF" anchor="stretch,stretch">
+		<Text value="Modify the XML below!" fontColor="#000000FF" fontSize="48" anchor="stretch,stretch" />
 	</Color>
 
 
 
 
 
-
 	<!-- Note: if you modify the WebEditorController the live updates may break -->
-	<Code class="WebEditorController" singleton="true" />
+	<Code class="WebEditorController" singleton="true">
+		<Notification name="ButtonClicked" />
+		<Notification name="InputFieldChanged" />
+	</Code>
 </Canvas>
