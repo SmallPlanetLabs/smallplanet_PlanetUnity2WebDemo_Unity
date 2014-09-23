@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<GameObject bounds="@eval(0,0,w,80)" xmlns="http://schema.smallplanet.com/PlanetUnity">
+	<Color color="#FFFFFFFF" anchor="stretch,stretch" />
+	<Color color="#AAAAAAFF" bounds="@eval(0,0,w,1)" anchor="bottom,left" />
+
+	<RawImage title="Icon" bounds="0,-80,80,80" anchor="top,left" />
+
+	<Text title="Content" bounds="@eval(90,0,w-90,h)" fontSize="32" fontColor="#000000FF" anchor="stretch,left" alignment="upperLeft" />
+
+</GameObject>

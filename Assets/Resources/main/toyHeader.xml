@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<GameObject bounds="@eval(0,0,w,40)" xmlns="http://schema.smallplanet.com/PlanetUnity">
+
+	<Color color="#000000FF" />
+	<Text title="Title" fontSize="32" fontColor="#FFFFFFFF" />
+
+</GameObject>
