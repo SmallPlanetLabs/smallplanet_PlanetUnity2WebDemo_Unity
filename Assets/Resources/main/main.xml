@@ -4,7 +4,7 @@
 	<Color color="#FFFFFFFF" anchor="stretch,stretch">
 		<Text value="Modify the XML below!" fontColor="#000000FF" fontSize="48" anchor="stretch,stretch" />
 	</Color>
-
+	
 	<!-- Note: if you modify the WebEditorController the live updates may break -->
 	<Code class="WebEditorController" singleton="true">
 		<Notification name="ButtonClicked" />

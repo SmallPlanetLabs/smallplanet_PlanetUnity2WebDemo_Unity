@@ -32,11 +32,11 @@ public class WebEditorController : MonoBehaviour, IPUCode {
 		PUInputField field = args ["sender"] as PUInputField;
 
 		if (field != null) {
-
-			Debug.Log ("You entered \""+field.field.value+"\"");
+		
+			Debug.Log ("You entered \""+field.field.text+"\"");
 
 			#if UNITY_WEBPLAYER && !UNITY_EDITOR
-			Application.ExternalCall( "Alert", "You entered \""+field.field.value+"\"" );
+			Application.ExternalCall( "Alert", "You entered \""+field.field.text+"\"" );
 			#endif
 		}
 	}
